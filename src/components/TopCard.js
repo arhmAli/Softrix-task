@@ -36,7 +36,7 @@ const TopCard = () => {
         <h3>Sign Up</h3>
       </motion.div>
       <motion.img
-        src="/illistration.png"
+        src="/Illistration.png"
         className="illistration-img"
         initial={{ opacity: 0, rotate: -10 }}
         animate={{ opacity: 1, rotate: 0 }}
