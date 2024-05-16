@@ -321,7 +321,7 @@ z-index: 20;
 .fifth-card img:hover{
     animation: fadeOutScale 0.5s ease-out forwards;
 }
-@media screen and (min-width:100px) and (max-width: 350px){
+@media screen and (min-width:300px) and (max-width: 480px){
     .text{
         padding-top: 100%;
         font-size: 1.5rem;
@@ -360,25 +360,26 @@ z-index: 20;
         margin-left:-1%;
     }
     .right-cards{
-        margin-top: -190%; 
-        margin-left: 10%;   
+        margin-top: -160%; 
+        margin-left: 20%;   
     }
     .right-cards{
         margin-left: 10%;
     }
     .sec-card-img{
-        margin-top: -160%;
+        margin-top: -120%;
         width: 10vw;
     }
     .third-card-img{
-        margin-top: -210%;
-        margin-left: 1%;
+        margin-top: -165%;
+        margin-left: 10%;
         width: 10vw;
     
     }
+    
 }
 
-@media screen and (min-width:351px) and (max-width: 768px) {
+@media screen and (min-width:481px) and (max-width: 768px) {
     
     /* display the cards now at top and then the text */
     .sec-card{
