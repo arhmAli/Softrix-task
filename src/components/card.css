@@ -367,10 +367,24 @@ z-index: 20;
     .right-cards{
         margin-left: 10%;
     }
-    #sec-card-img{
-        margin-top: -100%;
+    .google{
+        margin-top: 0%;
         width: 10vw;
-        margin-left: 5%;
+        margin-left: 15%;
+        position: absolute;
+    }
+    
+    .stock{
+        margin-top: 15%;
+        width: 10vw;
+        margin-left: 15%;
+        position: absolute;
+    }
+    
+    .amazon{
+        margin-top: -5%;
+        width: 10vw;
+        margin-left: 15%;
         position: absolute;
     }
     .third-card-img{
