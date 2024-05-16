@@ -29,7 +29,7 @@ const FourthCard=()=>{
             className='stock-amzn'
             />
             <img
-            src='input file 2.png'
+            src='Input file 2.png'
             id='input-file'
             />
             
