@@ -1,0 +1,402 @@
+body{
+    box-sizing: border-box;
+}
+.parent-div{
+    z-index: -10;
+    width: 100vw;
+    height: 106vh;
+    background: #00ABE1;
+    
+}
+.face-img{
+    width: 100vw;
+    background: white;
+}
+.child{
+    margin-top: 0%;
+    margin-left: 1%;
+}
+.child img{
+    border: 15px solid white;
+    border-radius: 5%;
+    margin-left: 1%;
+    padding:5%;
+}
+.child h3{
+    margin-top: -5%;
+    margin-left:10%;
+    color:#fff;
+    font-size: 2rem;
+    font-weight: 400;
+}
+.illistration-img{
+    position: relative;
+    z-index: 10;
+    margin-top: -25%;
+    margin-left: 25%;
+    height: 350px;
+    padding-bottom: 15px;
+}
+.text-pic-div{
+    position: absolute;
+    display: flex;
+    margin-top: -30%;
+    margin-left: 31%;
+    background: #fff;
+    height: 65vh;
+    /* padding-top: 5%; */
+    width: 68%;
+    border-radius: 1%;
+}
+.text-div{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.7rem;
+    margin-left: 30%;
+    margin-top: 10%;
+    color: rgb(57, 126, 216);
+}
+
+@media screen and (max-width: 768px) {
+    .face-img,
+    .child,
+    .illistration-img{
+        display: none; /* Hide elements on mobile */
+    }
+
+    .text-pic-div {
+        width: 120vw;
+        height: 100vh;
+        max-width: none;
+        margin-top: 0%;
+        /* padding-top: 50%; */
+        margin-left:-20% ;
+        position: absolute;
+        display: block;
+        padding-top: 20%;
+        /* z-index: -10; */
+    }
+}
+
+@media screen and (min-width: 1378px) {
+
+    .text-pic-div {
+        margin-top: -18%;
+        margin-left: 28%;
+    }
+}
+
+.sec-card{
+    margin: 0;
+    padding: 1vw;
+    background: #3994E9;
+    height: 100vh;
+    width: 98vw;
+    display: flex;
+}
+.parent{
+height: 80vh;
+width: 98vw;
+background: #fff;
+margin-top: 10vh;
+margin-right: -0.5vw;
+border: 10px solid white;
+border-radius: 1%;
+}
+.text{
+    font-family:Roboto;
+    font-weight: 400;
+    font-size: 33px;
+    color: #3994E9;
+    margin-top: 10%;
+    margin-left: 10%;
+    
+}
+.cards{
+    height: 480px;
+    width: 642px;
+    transition: all 0.5s ease-out;
+}
+.cards img:hover{
+    
+    cursor: pointer;
+    animation: scaleUp 0.5s ease-in-out forwards;
+}
+.stock{
+    position: absolute;
+    margin-top: -10%;
+    z-index: 20;
+    margin-left:55%;
+    height: 50vh;
+
+}
+
+.google{
+    position: absolute;
+    margin-top: -17%;
+    z-index: 10;
+    margin-left:55%;
+    height: 50vh;
+}
+.amazon{
+    position: absolute;
+    margin-top: -20%;
+    z-index: 0;
+    margin-left:55%;
+    height: 60vh;
+    margin-right: 100px;
+}
+@media screen and (max-width: 768px) {
+    
+/* display the cards now at top and then the text */
+.sec-card{
+    margin-top: 10%;
+    height: 110vh;
+    width: 100vw;
+}
+.parent{
+    /* margin-top: 50%; */
+    height:90vh;
+    width:80vw;
+    margin-left: 10%;
+}
+.text{
+    padding-top: 90%;
+    font-size: 20px;
+}
+.cards{
+    position: absolute;
+    margin-top: -80%;
+    margin-left: -90%;
+}
+.google {
+    
+    height: 174px;
+    width: 233px;
+}
+.amazon{
+    
+    height: 174px;
+    width: 233px;
+
+}
+.stock{
+    
+    height: 174px;
+    width: 233px;
+}
+}
+
+@media screen and (min-width: 1378px) {
+
+    .text-pic-div {
+        margin-top: -18%;
+        margin-left: 28%;
+    }
+}
+
+.third-card{
+    margin: 0;
+    padding: 1vw;
+    background: #31CE5D;
+    height: 100vh;
+    width: 98vw;
+    display: flex;
+}
+.text-right{
+    margin-left: 60%;
+}
+.right-cards{
+height: 100px;
+width: 100px;
+margin-top: -40%;
+transition: all 0.5s ease-out;
+}
+.right-cards img:hover{
+    cursor: pointer;
+    animation: scaleUp 0.5s ease-out forwards;
+}
+.account-types{
+position: absolute;
+margin-top: 30%;
+height: 50vh;
+width: 625px;
+z-index: 10;
+}
+.accounts{
+position: absolute;
+z-index: 5;
+margin-top: 25%;
+height: 50vh;
+width: 625px;
+}
+.brokers{
+    position: absolute;
+    z-index: 0;
+    margin-top: 17%;
+    height: 50vh;
+    width: 625px;
+    
+}
+@media screen and (max-width: 768px) {
+    
+    /* display the cards now at top and then the text */
+    .third-card{
+        margin-top: 0%;
+        height: 110vh;
+        width: 100vw;
+    }
+    .parent{
+        /* margin-top: 50%; */
+        height:90vh;
+        width:80vw;
+        margin-left: 10%;
+    }
+    .text-right{
+        padding-top: 90%;
+        margin-left:10%;
+        font-size: 20px;
+    }
+    .right-cards{
+        margin-top: -140%; 
+        margin-left: 10%;   
+    }
+    .account-types {
+        
+        height: 174px;
+        width: 233px;
+    }
+    .accounts{
+        
+        height: 174px;
+        width: 233px;
+    
+    }
+    .brokers{
+        
+        height: 174px;
+        width: 233px;
+    }
+    }
+.fourth-card{
+        margin: 0;
+        padding: 1vw;
+        background: #FBBC12;
+        height: 100vh;
+        width: 98vw;
+        display: flex;
+    }
+.stack-div{
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: -21%;
+        margin-left: 55%;
+        background: #fff;
+        border: 2px solid white;
+        border-radius: 10%;
+        transition: all 0.3s ease-in-out ;
+    }
+.stack-div img{
+        height: 124px;
+        width: 504px;
+        margin-top: 1%;
+
+    }
+.stack-div img:hover{
+    cursor: pointer;
+    animation: scaleUp 0.5s ease-out forwards;
+}
+.stock-amzn{
+margin-top: 1%;
+}
+.input-file{
+    width: 10px;
+}
+@media screen and (max-width: 768px) {
+    .fourth-card{
+        width: 100vw;
+    }
+    .stack-div{
+        /* height: 100px;
+        width: 50px; */
+        margin-top: -70%;
+        margin-left: 40%;
+        box-sizing: border-box;
+        height: 0;
+        width: 0;
+        background:#FBBC12 ;
+    }
+    .stack-div img{
+        height: 50px;
+        width: 200px;
+        margin-top: 1%;
+        margin-left:-180% ;
+    }
+    .stack-div h3{
+        margin-top: -50%;
+        margin-right:180% ;
+    }
+    }
+.first{
+position: absolute;
+display: flex;
+margin-top: 20%;
+margin-left: 5%;
+z-index: 20;
+}
+
+.second{
+    position: absolute;
+    display: flex;
+    margin-top: 20%;
+    margin-left: 20%;
+    z-index: 10;
+    }
+    
+.third{
+    position: absolute;
+    display: flex;
+    margin-top: 20%;
+    margin-left: 25%;
+    z-index: 5;
+    }
+.fifth-card{
+    background: #9F73C2;
+    transition: 0.5s all ease-in-out;
+}
+.fifth-card img:hover{
+    animation: fadeOutScale 0.5s ease-out forwards;
+}
+
+@keyframes scaleUp {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(1.2); /* Adjust the scale as needed */
+    }
+  }
+  
+  
+  
+  /* Fade Out and Scale Animation */
+  @keyframes fadeOutScale {
+    from {
+      opacity: 0;
+      transform: scale(1);
+    }
+    to {
+      opacity: 0.5;
+      transform: scale(1.1); /* Adjust the scale as needed */
+    }
+    to{
+        opacity: 1;
+        transform: scale(1.2);
+    }
+  }
+/*   
+  .fade-out-scale {
+    animation: fadeOutScale 1s ease-in-out forwards; /* Adjust duration and timing function as needed */ 
+  
