@@ -145,54 +145,6 @@ border-radius: 1%;
     height: 60vh;
     margin-right: 100px;
 }
-@media screen and (max-width: 768px) {
-    
-/* display the cards now at top and then the text */
-.sec-card{
-    margin-top: 10%;
-    height: 110vh;
-    width: 100vw;
-}
-.parent{
-    /* margin-top: 50%; */
-    height:90vh;
-    width:80vw;
-    margin-left: 10%;
-}
-.text{
-    padding-top: 90%;
-    font-size: 20px;
-}
-.cards{
-    position: absolute;
-    margin-top: -80%;
-    margin-left: -90%;
-}
-.google {
-    
-    height: 174px;
-    width: 233px;
-}
-.amazon{
-    
-    height: 174px;
-    width: 233px;
-
-}
-.stock{
-    
-    height: 174px;
-    width: 233px;
-}
-}
-
-@media screen and (min-width: 1378px) {
-
-    .text-pic-div {
-        margin-top: -18%;
-        margin-left: 28%;
-    }
-}
 
 .third-card{
     margin: 0;
@@ -369,19 +321,157 @@ z-index: 20;
 .fifth-card img:hover{
     animation: fadeOutScale 0.5s ease-out forwards;
 }
+@media screen and (max-width: 350px){
+    .text{
+        padding-top: 100%;
+        font-size: 1.5rem;
+        
+    }
+    .sec-card{
+        height: 105vh;
+    }
+    
+    .cards{
+        margin-top: -150%;
+        margin-left:-50%;
+    }
+    .cards img{
+        height: 150px;
+        width: 180px;
+    }
+    .third-card{
+        height: 110vh;
+    }
+    .right-cards{
+        margin-top: -190%; 
+        margin-left: 10%;   
+    }
+    .stack-div{
+        margin-top: -100%;
+        padding-top: 10px;
+    }
+    .fifth-card img{
+        height: 220px;
+        width: 200px;
+        margin-top: 15%;
+        margin-left:-1%;
+    }
+    .right-cards{
+        margin-left: 10%;
+    }
+    
+}
 
+@media screen and (min-width:351px) and (max-width: 768px) {
+    
+    /* display the cards now at top and then the text */
+    .sec-card{
+        margin-top: 10%;
+        height: 110vh;
+        width: 100vw;
+    }
+    .parent{
+        /* margin-top: 50%; */
+        height:90vh;
+        width:80vw;
+        margin-left: 10%;
+    }
+    .text{
+        padding-top: 90%;
+        font-size: 20px;
+    }
+    .cards{
+        position: absolute;
+        margin-top: -50%;
+        margin-left: -50%;
+    }
+    .google {
+        
+        height: 174px;
+        width: 233px;
+    }
+    .amazon{
+        
+        height: 174px;
+        width: 233px;
+    
+    }
+    .stock{
+        
+        height: 174px;
+        width: 233px;
+    }
+    .right-cards{
+        margin-top: -150%;
+    
+    }
+    .third-card{
+        margin-top: 0%;
+    }
+    .right-cards img{
+        height: 250px;
+        width: 250px;
+    }
+    .text-right{
+        padding-top: 100%;
+    }
+    .fourth-card{
+        margin-top: 0%;
+    }
+    .stack-div{
+        margin-top: -60%;
+    }
+    .text{
+        margin-bottom: 100px;
+    }
+    .fifth-cards{
+        margin-left:-00%;
+    }
+    }
+    
+    @media screen and (min-width: 1378px) and (max-width: 1620px) {
+    
+        .text-pic-div {
+            margin-top: -25%;
+            height: 50vh;
+            margin-left: 30%;
+        }
+        .cards{
+            margin-top: 1%;
+            margin-left: -13%;
+        }
+        .text-sec{
+            margin-left:1%;
+        }
+    }
+    @media screen and (min-width: 1621px){
+    
+        .text-pic-div {
+            margin-top: -25%;
+            height: 45vh;
+            margin-left: 28%;
+        }
+        .cards{
+            margin-top: 1%;
+            margin-left: -15%;
+        }
+        .text-sec{
+            margin-left:1%;
+        }
+        .right-cards{
+            margin-top: -37%;
+            margin-left: 5%;
+        }
+    }
+   
 @keyframes scaleUp {
     from {
       transform: scale(1);
     }
     to {
-      transform: scale(1.2); /* Adjust the scale as needed */
+      transform: scale(1.2); 
     }
   }
-  
-  
-  
-  /* Fade Out and Scale Animation */
   @keyframes fadeOutScale {
     from {
       opacity: 0;
@@ -389,14 +479,10 @@ z-index: 20;
     }
     to {
       opacity: 0.5;
-      transform: scale(1.1); /* Adjust the scale as needed */
+      transform: scale(1.1); 
     }
     to{
         opacity: 1;
         transform: scale(1.2);
     }
   }
-/*   
-  .fade-out-scale {
-    animation: fadeOutScale 1s ease-in-out forwards; /* Adjust duration and timing function as needed */ 
-  
