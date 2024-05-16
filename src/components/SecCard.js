@@ -64,7 +64,7 @@ const SecCard = () => {
             transition={{ delay: 0.2 }}
           />
           <motion.img
-            src="/Amazonians Group.png"
+            src="/Amazonians group.png"
             className='amazon'
             ref={ref}
             initial="hidden"
